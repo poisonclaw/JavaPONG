@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title> <link rel="stylesheet" href="style.css">
+
+    
+
+<button onclick="mostrarMensagem()">Pong?</button>
+
+<script>
+function mostrarMensagem() {
+  alert("Jogue Pong!");
+}
+</script>
+
+
+</head>
+<body>
+
+
+
+    
+<button id="mudaCorBtn">Mudar Cor de Fundo</button>
+
+  <script>
+    // Seleciona o botão pelo ID
+    const botao = document.getElementById('mudaCorBtn');
+
+    // Adiciona um evento de clique ao botão
+    botao.addEventListener('click', () => {
+      // Gera uma cor aleatória em formato hexadecimal
+      const corAleatoria = '#' + Math.floor(Math.random()*16777215).toString(16);
+      // Altera a cor de fundo do corpo da página
+      document.body.style.backgroundColor = corAleatoria;
+    });
+  </script>
+
+
+
+    <header>Jogo Pong</header>
+    <h1>
+        O jogo Pong é um dos primeiros jogos eletrônicos de sucesso e 
+        foi criado na década de 1970. Ele é bastante simples e divertido, 
+        inspirado no jogo de tênis de mesa. No Pong, dois jogadores controlam barras verticais que se movem para cima e para baixo na tela, 
+        tentando rebater uma bola que passa por eles. O objetivo é fazer com que a bola passe pelo lado do adversário, marcando um ponto.
+    </h1>
+    <img src="Pong_Cabinet.jpg" id="pong">
+</body>
+</html>

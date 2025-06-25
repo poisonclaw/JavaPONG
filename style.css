@@ -1,0 +1,17 @@
+header {
+    font-style: italic; font-size: 29px; text-align: center;
+}
+h1 {
+    font-size: 18px; border-style: dotted; background-color: antiquewhite;
+}
+#pong {
+    margin-left: 25%; border-style: inset;border-width: 10px;
+      object-fit: cover;
+            transition: transform 0.3s ease;  /* Transição suave */
+        }
+        /* Efeito de zoom quando o mouse passa por cima */
+        #image-container:hover #image {
+            transform: scale(1.2);  /* Aumenta a imagem em 20% */
+        }
+
+
